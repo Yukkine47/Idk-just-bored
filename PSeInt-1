@@ -1,0 +1,56 @@
+Funcion Juego
+		Escribir "¿Deseas jugar al minecraft versión mierda?"
+		Leer siono
+		si siono=="Si" o siono=="No" o siono=="si" o siono=="no"
+			si siono=="Si" o siono=="si"
+				Escribir "OK! ¿Qué deseas hacer ahora? ¿Minar o explorar?"
+				Leer minarexplorar
+				si minarexplorar=="minar" o minarexplorar=="Minar"
+					x<-Azar(4)
+					si x==0
+						Escribir "¡Has encontrado carbón!"
+					SiNo
+						si x==1
+							Escribir "¡Has encontrado hierro!"
+						SiNo
+							si x==2
+								Escribir "¡Has encontrado diamante!"
+							SiNo
+								si x==3
+									Escribir "Jopetas, no has encontrado nada... ¡Mejor suerte a la próxima!"
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				SiNo
+					si minarexplorar=="Explorar" o minarexplorar=="explorar"
+						x<-Azar(4)
+						si x==0
+							Escribir "¡Has encontrado una oveja rosa!"
+						SiNo
+							si x==1
+								Escribir "¡Has encontrado una aldea!"
+							SiNo
+								si x==2
+									Escribir "¡Has encontrado una cueva gigante!"
+								SiNo
+									si x==3
+										Escribir "Jopetas, no has encontrado nada... ¡Mejor suerte a la próxima!"
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+					
+				FinSi
+			SiNo
+				Escribir "Si no te apetece, no te obligaré."
+			FinSi
+		SiNo
+			Escribir "¡Esa no es una opción!"
+		FinSi
+	FinFuncion
+
+	Algoritmo Pruebas
+		Juego
+	FinAlgoritmo

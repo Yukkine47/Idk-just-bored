@@ -1,0 +1,92 @@
+Funcion x <- Menu ()
+	Escribir ' - 1 - Introducir números'
+	Escribir ' - 2 - Sumar números'
+	Escribir ' - 3 - Multiplicar números'
+	Escribir ' - 4 - Hallar el mayor número'
+	Escribir ' - 5 - Hallar el menor números'
+	Escribir ' - 6 - Calcular la media de los números'
+	Escribir ' - 7 - Obtener los divisores de los números'
+	Escribir " - 8 - Hacer la potencia de cada uno sobre el otro"
+	Escribir ' - 9 - Finalizar programa'
+	Leer x
+FinFuncion
+
+Algoritmo YourMama
+	x <- Menu()
+	Repetir
+	Si x=1 Entonces
+		Escribir 'Dame un número'
+		Leer n1
+		Escribir 'Dame otro número'
+		Leer n2
+	FinSi
+	Si x=2 Entonces
+		Escribir n1,' + ',n2,' = ',n1+n2
+	FinSi
+	Si x=3 Entonces
+		Escribir n1,' * ',n2,' = ',n1*n2
+	FinSi
+	Si x=4 Entonces
+		Si n1=n2
+			Escribir "Los números son iguales"
+		SiNo
+			Si n1<n2
+				Escribir n2 " > " n1
+			SiNo
+				Escribir n1 " > " n2
+			FinSi	
+		FinSi
+	FinSi
+	Si x=5 Entonces
+		Si n1=n2
+			Escribir "Los números son iguales"
+		SiNo
+			Si n1>n2
+				Escribir n2 " < " n1
+			SiNo
+				Escribir n1 " < " n2
+			FinSi
+		FinSi
+	FinSi
+	Si x=6
+		Escribir "La media de " n1 " y " n2 " es " (n1+n2)/2
+	FinSi
+	Si x=7
+		Escribir "Los divisores de los números son:"
+			Para i<-1 Hasta n1 Con Paso 1 Hacer
+				Si n1%i=0
+					Escribir i " es divisor de " n1
+					f<-f+1
+				FinSi
+			Fin Para
+				Si f=2
+					Escribir n1 " es primo"
+				FinSi
+			Para z<-1 Hasta n2 Con Paso 1 Hacer
+				Si n2%z=0
+					Escribir z " es divisor de " n2
+					g<-g+1
+				FinSi
+			FinPara
+				Si g=2
+					Escribir n2 " es primo"
+				FinSi
+	FinSi
+	Si x=8
+		p<-1
+		Para i<-1 hasta n2 Hacer
+			p<-p*n1
+		FinPara
+		Escribir n1 " ^ " n2 " = " p
+		p2<-1
+		Para i<-1 hasta n1 Hacer
+			p2<-p2*n2
+		FinPara
+		Escribir n2 " ^ " n1 " = " p2
+	FinSi
+	Si x<1 o x>9
+		Escribir "Número no válido"
+	FinSi
+	x<-Menu()
+Hasta Que x=9
+FinAlgoritmo

@@ -1,0 +1,44 @@
+Algoritmo xd
+	Escribir "¿De cuántos números es tu secuencia? (De 3 a 8)"
+	Leer n
+	Segun n Hacer
+		3:
+			Escribir sec "Tu secuencia es de 3 números. Dame el tercer número. Estoy programado para que los 2 primeros sean 1 y 2"
+			Leer x
+			sig<-3*x-5
+			rel<-x-3
+			Escribir "El siguiente número sería " sig " y la relación es " rel "."
+		4:
+			Escribir "Tu secuencia es de 4 números. Dame el tercer y el cuarto número. Estoy programado para que los 2 primeros sean 1 y 2"
+			Leer x
+			Leer z
+			sig<-4*z-6*x+7
+			rel<-z-3*x+5
+			emp1<-x-3
+			Escribir "El siguiente número sería " sig " y la relación es " rel ". También deberías saber que la penúltima fila empieza por " emp1 "."
+		5:
+			Escribir "Tu secuencia es de 5 números. Dame el tercer, el cuarto y el quinto número. Estoy programado para que los 2 primeros sean 1 y 2"
+			Leer x
+			Leer z
+			Leer a
+			sig<-10*x-10*z+5*a-9
+			rel<-6*x-4*z+a-7
+			emp1<-x-3
+			emp2<--3*x+z+5
+			Escribir "El siguiente número sería " sig " y la relación es " rel ". También deberías saber que la antepenúltima fila empieza por " emp1 " y la penúltima por " emp2 "."
+		6:
+			Escribir "Tu secuencia es de 6 números. Dame el tercer, el cuarto, quinto y sexto número. Estoy programado para que los 2 primeros sean 1 y 2"
+			Leer x
+			Leer z
+			Leer a
+			Leer b
+			sig<--15*x-15*a+20*z+6*b+11
+			rel<--10*x+10*z-5*a+b+9
+			emp1<-x-3
+			emp2<--3*x+z+5
+			emp3<-6*x-4*z+a-7
+			Escribir "El siguiente número sería " sig " y la relación es " rel ". También deberías saber que la anteantepenúltima fila empieza por " emp1 ", la antepenúltima por " emp2 " y la penúltima por " emp3 "."
+		De Otro Modo:
+			Escribir sig
+	Fin Segun
+FinAlgoritmo

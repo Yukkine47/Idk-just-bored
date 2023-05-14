@@ -39,6 +39,6 @@ Algoritmo xd
 			emp3<-6*x-4*z+a-7
 			Escribir "El siguiente número sería " sig " y la relación es " rel ". También deberías saber que la anteantepenúltima fila empieza por " emp1 ", la antepenúltima por " emp2 " y la penúltima por " emp3 "."
 		De Otro Modo:
-			Escribir sig
+			Escribir "No es un número válido"
 	Fin Segun
 FinAlgoritmo
